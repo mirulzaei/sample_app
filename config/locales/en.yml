@@ -34,3 +34,51 @@ en:
   help_page: "Rails Tutorial help page"
   book_page: "Ruby on Rails tutorial Bookrails"
   contact_page: "Contact page"
+  
+  user:
+    user: "User"
+    title: "Sign up"
+    update: "Update Successful"
+    update_fail: "WARNING! Update failed"
+    delete: "user successfully deleted"
+    delete_fail: "WARNING! failed to delete. Please try again"
+    confirm: "Are you sure?"
+    delete_user: "Delete"
+    new:
+      confirmation: "Password Confirmation"
+      password: "Password"
+      name: "Name"
+      email: "Email"
+      create: "Create my account"
+      welcome: "Welcome to Sample App!"
+      danger: "Failed! Please try again"
+      absent: "User not found!"
+
+    error:
+      errors: "error"
+      message: "This form contains"
+      login: "ERROR! please log in"
+
+  signup: "Sign up now!"
+  site_name: "Ruby on Rails Tutorial Sample App"
+  global:
+    home: "Home"
+    help: "Help"
+    about: "About"
+  static_pages:
+    home:
+      title: "Home"
+    help:
+      title: "Help"
+    about:
+      title: "About"
+  home:
+    message: "Ruby on Rails"
+    page: "This is the home page for the "
+    sample: " sample application."
+  help:
+    message: "Ruby on Rails Help page"
+    book: "book"
+    page: "Get help on the Ruby on Rails Tutorial at the "
+    sample: "To get help on this sample app, see the "
+    
