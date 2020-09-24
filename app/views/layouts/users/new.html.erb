@@ -1,8 +1,12 @@
 <% provide :title, "Sign up" %>
 
+<% provide :title, "Sign Up" %>
+<% provide :button_text, "Create my account" %>
 <h1>Sign up</h1>
+
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
+    
       <%= form_for @user, url: signup_path do |f| %>
 
         <% if @user.errors.any? %>
@@ -30,5 +34,6 @@
         <%= f.password_field :password_confirmation %>
         <%= f.submit "Create My Account", class: "btn btn-primary" %>
       <% end %>
+      <%= render "form" %>
     </div>
 </div>
