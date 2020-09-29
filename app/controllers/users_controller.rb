@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find_by id: params[:id]
+    @microposts = @user.microposts.page(params[:page]).per Settings.paging
   end 
     flash[:danger] = "User not found!"
     redirect_to root_path
@@ -47,6 +48,20 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find_by id: params[:id]
+  end
+
+  def following
+    @title = "Following"
+    @user = User.find_by id: params[:id]
+    @users = @user.following.page params[:page]
+    render "show_follow"
+  end
+  
+  def followers
+    @title = "Followers"
+    @user = User.find_by id: params[:id]
+    @users = @user.followers.page params[:page]
+    render "show_follow"
   end
   
   def destroy

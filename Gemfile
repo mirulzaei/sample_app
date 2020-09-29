@@ -16,6 +16,9 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "faker", "1.7.3"
 gem "kaminari"
 gem "bcrypt"
+gem "active_storage_validations"
+gem "image_processing"
+gem "mini_magick"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
