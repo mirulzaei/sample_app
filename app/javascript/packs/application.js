@@ -6,3 +6,4 @@ require('channels')
 require("jquery")
 import "bootstrap"
 
+require("./micropost")
